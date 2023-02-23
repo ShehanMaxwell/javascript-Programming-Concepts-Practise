@@ -26,10 +26,10 @@ function containsCommonItems2(arr1, arr2) {
 
 // 2nd way of doing this. javascript specific
 
-containsCommonItems2(array1, array2);
-
 function containsCommonItems3(arr1, arr2) {
   return arr1.some((item) => arr2.includes(item));
 }
 
 containsCommonItems3(array1, array2);
+
+console.log(containsCommonItems3(array1, array2));
