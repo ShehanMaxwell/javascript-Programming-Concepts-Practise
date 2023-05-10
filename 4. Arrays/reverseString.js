@@ -24,3 +24,7 @@ const reverse3 = (str) => str.split('').reverse().join('');
 const reverse4 = (str) => [...str].reverse().join('');
 
 console.log(reverse4('Hi my name is shehan'));
+
+const reverseString = (str) => [...str].reverse().join('');
+
+console.log(reverseString('I AM THE DANGER'));
