@@ -36,12 +36,11 @@ class HashTable {
     const keysArray = [];
     for (let i = 0; i < this.data.length; i++) {
       if (this.data[i]) {
-        console.log(this.data[i])
-        keysArray.push(this.data[i][0]);
+        keysArray.push(this.data[i][0][0]);
       }
     }
     console.log(keysArray);
-  } 
+  }
 }
 
 const myHashTable = new HashTable(50);
