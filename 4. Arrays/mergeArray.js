@@ -23,7 +23,7 @@ function mergeSortedArrays(array1, array2) {
       mergedArray.push(array2Item);
       array2Item = array2[j];
       j++;
-    } 
+    }
   }
 
   return mergedArray;
