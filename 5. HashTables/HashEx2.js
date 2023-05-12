@@ -22,8 +22,20 @@ function firstRecurringCharacter(input) {
     }
   }
   return undefined;
-}
+} //O(n^2)
 
-firstRecurringCharacter([2, 5, 1, 2, 3, 5, 1, 2, 4]);
+function firstRecurringCharacter2(input) {
+  let map = {};
+  for (let i = 0; i < input.length; i++) {
+    if (map[input[i]] !== undefined) {
+      return input[i];
+    } else {
+      map[input[i]] = i;
+    }
+    console.log(map);
+  }
 
-console.log(firstRecurringCharacter([2, 5, 1, 2, 3, 5, 1, 2, 4]));
+  return undefined;
+} // O(n)
+
+console.log(firstRecurringCharacter2([2, 5, 1, 2, 3, 5, 1, 2, 4]));
