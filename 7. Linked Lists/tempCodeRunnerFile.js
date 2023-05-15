@@ -1,1 +1,1 @@
-this.tale = newNode;
+myLinkedList.reverse();
