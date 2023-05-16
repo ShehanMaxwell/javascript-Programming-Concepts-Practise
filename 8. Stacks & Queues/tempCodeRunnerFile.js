@@ -1,0 +1,1 @@
+const holdingPointer = this.top;
