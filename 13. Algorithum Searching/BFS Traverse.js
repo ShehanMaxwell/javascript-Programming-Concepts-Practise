@@ -132,9 +132,16 @@ class BinarySearchTree {
     let list = [];
     let queue = [];
     queue.push(currentNode);
-    
+
+    while (queue.length > 0) {
+      currentNode = queue.shift();
+    }
   }
 }
+
+//     9
+//  4     20
+//1  6  15  170
 
 const tree = new BinarySearchTree();
 tree.insert(9);
@@ -148,10 +155,6 @@ tree.insert(1);
 tree.lookup(1);
 tree.remove(4);
 console.log(tree);
-
-//     9
-//  4     20
-//1  6  15  170
 
 function traverse(node) {
   const tree = { value: node.value };
