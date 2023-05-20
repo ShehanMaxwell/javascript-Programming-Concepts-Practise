@@ -4,17 +4,18 @@
 breadthfirst search
 
 //If the tree is very deep and solutions are rare: 
-deapthfor search
+breafthfor search
+
 //If the tree is very wide:
-breadfot search
+breadftt search (DFS is long)
 
 //If solutions are frequent but located deep in the tree:
 deapthfor search
-
+ 
 //Determining whether a path exists between two nodes:
-breadthfor search
+deapthfor search
 
 //Finding the shortest path:
-depthfor search
+breadftt search
 
 */
