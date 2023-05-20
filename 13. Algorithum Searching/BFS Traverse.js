@@ -131,6 +131,8 @@ class BinarySearchTree {
     let currentNode = this.root;
     let list = [];
     let queue = [];
+    queue.push(currentNode);
+    
   }
 }
 
