@@ -2,7 +2,8 @@
 
 let calculations = 0;
 function fibonacci(n) {
-  calculations++;
+  //O(2^n)
+
   if (n < 2) {
     return n;
   }
@@ -10,8 +11,10 @@ function fibonacci(n) {
 }
 
 function fibonacciMaster() {
+  //O(n)
   let cache = {};
   return function fib(n) {
+    calculations++;
     if (n in cache) {
       return cache[n];
     } else {
@@ -24,3 +27,19 @@ function fibonacciMaster() {
     }
   };
 }
+
+//a new method
+function fibonacciMaster2(n) {
+  let answer = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    answer.push(answer[i - 2] + answer[i - 1]);
+  }
+  return answer.pop();
+}
+
+const fasterFib = fibonacciMaster();
+
+console.log('Slow', fibonacci(35));
+console.log('Dynamic Programming', fasterFib(35));
+console.log('Dynamic programming 2 ', fibonacciMaster2(35));
+console.log('Calculation = ' + calculations);
